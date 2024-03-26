@@ -38,19 +38,19 @@
     font-weight: 500;
     color: black;
     background-color: white;
-   }
-   
-   .btn1:hover {
+}
+
+.btn1:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-   }
-   
-   .btn1:active {
+}
+
+.btn1:active {
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-   }
-   
-   .btn1::after {
+}
+
+.btn1::after {
     content: "";
     display: inline-block;
     height: 100%;
@@ -61,18 +61,14 @@
     left: 0;
     z-index: -1;
     transition: all .4s;
-   }
-   
-   .btn1::after {
+}
+
+.btn1::after {
     background-color: rgb(215, 88, 88);
-   }
-   
-   .btn1:hover::after {
+}
+
+.btn1:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
-   }
+}
 
-
-   
-
-   

@@ -7,7 +7,7 @@ import Cart from '../screens/Cart'
 const CartItem = ({ cart }) => {
 
     const { cartItems } = useSelector((state) => state.cart)
-    const { name, img, id, price, qty } = cart
+    let { name, img, id, price, qty } = cart
 
 
     const dispatch = useDispatch()
@@ -79,32 +79,6 @@ const CartItem = ({ cart }) => {
                 </div>
             </div>
 
-            {/* old */}
-            {/* <div className="MainContainer px-5 py-2 justify-around">
-                <div className='h-auto'>
-                    <div className="container h-[30vh] w-full border flex justify-center items-center bg-pink-100 ">
-                        <a href="#">
-                            <img className="p-4 h-[150px] w-[250px] object-fill" src={img} alt="product image" />
-                        </a>
-                        <div className="p-4">
-                            <a href="#">
-                                <h5 className="text-[16px] mb-2 font-semibold tracking-tight text-gray-900 dark:text-white">{name}</h5>
-                            </a>
-                            <hr className='border-gray-400 mt-3' />
-                            <div className="box w-full mt-2 flex justify-around items-center">
-                                <p className='text-2xl'>{price}</p>
-                                <div className="incrementBox w-[50%] flex justify-center items-center ">
-                                    <button className='text-2xl w-8 border border-gray-400 rounded-l-lg flex justify-center items-center' onClick={() => handleDecrement(id)}>-</button>
-                                    <p className='text-2xl w-8 border border-gray-400  flex justify-center items-center'>{qty}</p>
-                                    <button className='text-2xl w-8 border border-gray-400 rounded-r-lg flex justify-center items-center' onClick={() => handleIncrement(id)}>+</button>
-                                </div>
-                                <button onClick={() => handleDelete(cart.id)} >Remove</button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div> */}
 
         </>
     )

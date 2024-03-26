@@ -32,7 +32,7 @@ const Cart = () => {
 
 
 
-            <div className="font-[sans-serif] bg-gray-50 px-4">
+            <div className="font-[sans-serif] bg-gray-50 px-4 mt-2">
 
                 <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-4 h-full">
 

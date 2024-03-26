@@ -4,7 +4,7 @@ import PizzaLogo from '../assets/pizzalogo.jpg'
 const Footer = () => {
     return (
         <>
-            <footer className="bg-yellow-100 mt-8 dark:bg-gray-900">
+            <footer className="bg-red-200 mt-8 dark:bg-gray-900">
                 <div className="mx-auto w-full p-4 py-6 lg:py-8">
                     <div className="md:flex md:justify-between">
                         <div className="mb-6 md:mb-0">
