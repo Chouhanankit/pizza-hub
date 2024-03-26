@@ -36,7 +36,7 @@ const productSlice = createSlice({
 export default productSlice.reducer;
 
 export const fetchProducts = createAsyncThunk("FETCH/PRODUCTS", async () => {
-    const response = await fetch("http://localhost:8000/pizza");
+    const response = await fetch("https://pizza-hub-qovt.onrender.com/pizza");
     const data = await response.json();
     return data;
 });
