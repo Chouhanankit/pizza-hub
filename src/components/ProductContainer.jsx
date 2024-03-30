@@ -9,7 +9,7 @@ const ProductContainer = () => {
     if (isLoading) {
         return (
             <div className="container">
-                <h1 className='text-center text-yellow-400'>Loading...</h1>
+                <div class="loader"></div>
             </div>
         )
     }

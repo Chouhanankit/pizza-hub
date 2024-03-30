@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import CartItem from '../components/CartItem'
 import { useSelector } from 'react-redux'
 import Modal from './Popup'
@@ -15,6 +15,7 @@ const Cart = () => {
     const GST = (Total * 18) / 100
     const Discount = (Total + GST) * 10 / 100
     const Dis = parseInt(Discount)
+
 
     if (cartItems.length === 0) {
         return (
@@ -68,7 +69,7 @@ const Cart = () => {
 
 
                                 <div className="card bg-gray-400 text-white rounded-3">
-                                    <div className="card-body">
+                                    <div className="card-body ">
                                         <div className="d-flex justify-content-between align-items-center">
                                             <h5 className="mb-2">Card details</h5>
 
